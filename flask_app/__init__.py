@@ -3,9 +3,8 @@ import pickle
 
 # ML 모델 가져오기
 model = None
-with open('model.pkl', 'rb') as pickle_file:
+with open('/Users/inhwanhwang/Desktop/AI_13_황인환_section3_project/modeling/model.pkl', 'rb') as pickle_file:
     model = pickle.load(pickle_file)
-
 
 def create_app():
     app = Flask(__name__)
