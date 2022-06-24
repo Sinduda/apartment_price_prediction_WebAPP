@@ -17,7 +17,7 @@ def create_app():
         data1 = request.form['a']
         data2 = request.form['b']
         data3 = request.form['c']
-        X_test = [[data1, data2, data3]]
+        X_test = np.array([[data1, data2, data3]])
         y_pred = model.predict(X_test)
         return render_template('predict.html', data=X_test)
 
