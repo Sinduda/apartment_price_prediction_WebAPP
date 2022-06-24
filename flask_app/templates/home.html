@@ -12,17 +12,17 @@
 
     <title>자가를 꿈꾸다</title>
 </head>
-<body bgcolor=#D3D3D3>
+<body bgcolor=#C0C0C0>
 
     <center>
 
     <h1> 서울 자가를 꿈꾸다 </h1><br>
     
     <form method="POST", action="{{url_for('predict')}}">
-       <b> 평수 :  <input type="text", name='a', placeholder="원하는 평수를 숫자만 입력하세요. ex) 30 "> <br><br>
-        완공년도 :  <input type="text", name='b', placeholder="언제 지어진 아파트면 좋겠나요? 완공년도를 입력하세요. ex) 2010"> <br><br>
-        층수 :  <input type="text", name='c', placeholder="원하는 층수를 숫자만 입력하세요. ex) 6"> <br><br><br></b>
-        <input type="submit" , value='내가 원하는 집은 얼마?' >
+       <b> 평수 :  <input type="text", name='a', placeholder="ex) 30 "> <br><br>
+        연식 :  <input type="text", name='b', placeholder="ex) 20"> <br><br>
+        층수 :  <input type="text", name='c', placeholder="ex) 5"> <br><br><br></b>
+        <input type="submit" , value='얼마일까?' >
     </form>
     
     </center>
