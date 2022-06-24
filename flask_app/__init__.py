@@ -19,8 +19,7 @@ def create_app():
         data3 = request.form['c']
         X_test = [[data1, data2, data3]]
         y_pred = model.predict(X_test)
-        return f"예측 가격 = {round(y_pred[0][0])} 만원"
-        #return render_template('predict.html', data=pred)
+        return render_template('predict.html', data=y_pred)
 
     # @app.route('/predict', methods = ['POST'])
     # def predict():
