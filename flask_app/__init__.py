@@ -14,12 +14,12 @@ def create_app():
 
     @app.route('/predict', methods = ['POST'])
     def predict():
-        data1 = request.form['a']
-        data2 = request.form['b']
-        data3 = request.form['c']
-        X_test = np.array([[data1, data2, data3]])
+        data1 = int(request.form['a'])
+        data2 = int(request.form['b'])
+        data3 = int(request.form['c'])
+        X_test = [[data1, data2, data3]]
         y_pred = model.predict(X_test)
-        return render_template('predict.html', data=X_test)
+        return render_template('predict.html', data=y_pred)
 
     # @app.route('/predict', methods = ['POST'])
     # def predict():
@@ -29,6 +29,6 @@ def create_app():
     
     return app
 
-# if __name__ == "__main__":
-#     app = create_app()
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app = create_app()
+    app.run(debug=True)
