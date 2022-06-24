@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 
 # ML 모델 가져오기
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('/Users/inhwanhwang/Desktop/AI_13_황인환_section3_project/flask_app/model.pkl', 'rb'))
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/predict/', methods = ['POST'])
+@app.route('/predict/')
 def home():
     X_test = [[90, 2002, 6]]
     y_pred = model.predict(X_test)
