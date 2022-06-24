@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/predict/')
+@app.route('/predict/', methods = ['POST'])
 def home():
     X_test = [[90, 2002, 6]]
     y_pred = model.predict(X_test)
