@@ -12,6 +12,10 @@ def create_app():
     def home():
         return render_template('home.html')
 
+    @app.route('/dashboard')
+    def home():
+        return render_template('dashboard.html')
+
     @app.route('/predict', methods = ['POST'])
     def predict():
         data1 = (int(request.form['a']) * 3.305785) #평수를 m^2로 변환. 사람들한텐 평수가 더 편하니까.

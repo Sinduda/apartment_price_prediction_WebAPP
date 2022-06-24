@@ -18,9 +18,24 @@
         <h1> 서울 자가의 꿈 </h1><br>
     </center>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://aiproject3.herokuapp.com/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://aiproject3.herokuapp.com/dashboard">대시보드</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <center>
 
-    <h2> 내가 서울에서 아파트를 살 수 있을까..? </h2><br>
+    <h3> 내가 서울에서 아파트를 살 수 있을까..? </h3><br>
     
     <form method="POST", action="{{url_for('predict')}}">
        <b> 평수 :  <input type="text", name='a', placeholder="ex) 30 "> <br><br>
