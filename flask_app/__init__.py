@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 
 # ML 모델 가져오기
-model = pickle.load(open('flask_app/model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 app = Flask(__name__)
 
