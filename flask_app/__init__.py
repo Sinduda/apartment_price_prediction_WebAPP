@@ -14,7 +14,7 @@ def create_app():
 
     @app.route('/predict', methods = ['POST'])
     def predict():
-        data1 = int(request.form['a'])
+        data1 = (int(request.form['a']) * 3.305785) #평수를 m^2로 변환. 사람들한텐 평수가 더 편하니까.
         data2 = int(request.form['b'])
         data3 = int(request.form['c'])
         X_test = [[data1, data2, data3]]
