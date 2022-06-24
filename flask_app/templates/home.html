@@ -38,7 +38,6 @@
       </nav>
 
     <center>
-
     <br><br><h3> 내가 서울에서 아파트를 살 수 있을까..? </h3><br>
     
     <form method="POST", action="{{url_for('predict')}}">
@@ -47,14 +46,14 @@
         원하는 층수 :  <input type="text" required name='c', placeholder="ex) 5"> <br><br><br></b>
         <input type="submit" , value='얼마일까?' >
     </form>
-    
     </center>
 
     <center>
+        <br><br>-------------------------------------<br><br>
         <br><br><h4>데이터 출처 및 기준</h4><br><br>
         - 데이터 출처: https://dacon.io/competitions/official/21265/data <br>
-        - 데이터 상세: 2008년 ~ 20017년 서울시 아파트 실거래 정보 1만 건 (위 출처 데이터에서 무작위 임의추출)<br>
-        - 예측 모델: SimpleRegression<br>
+        - 데이터 상세: 08~17년 서울시 아파트 실거래 정보 1만 건 (위 데이터에서 무작위 임의추출)<br>
+        - 예측 모델: 선형회귀모델<br>
     </center>
 
 </body>
