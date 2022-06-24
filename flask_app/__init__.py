@@ -14,7 +14,7 @@ def index():
 def home():
     X_test = [[90, 2002, 6]]
     y_pred = model.predict(X_test)
-    return print('예측 가격 = ', round(y_pred[0][0]), '만원')
+    print('예측 가격 = ', round(y_pred[0][0]), '만원')
 
 if __name__ == "__main__":
     app.run(debug=True)
