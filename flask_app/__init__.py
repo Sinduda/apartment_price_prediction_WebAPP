@@ -19,7 +19,7 @@ def create_app():
         data3 = int(request.form['c'])
         X_test = [[data1, data2, data3]]
         y_pred = model.predict(X_test)
-        return render_template('predict.html', data=y_pred)
+        return render_template('predict.html', data=round(y_pred[0][0]))
 
     # @app.route('/predict', methods = ['POST'])
     # def predict():
