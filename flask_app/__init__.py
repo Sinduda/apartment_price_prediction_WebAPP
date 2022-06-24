@@ -12,21 +12,21 @@ def create_app():
     def home():
         return render_template('home.html')
 
-    # @app.route('/predict', methods = ['POST'])
-    # def predict():
-    #     data1 = request.form['a']
-    #     data2 = request.form['b']
-    #     data3 = request.form['c']
-    #     arr = np.array([[data1, data2, data3]])
-    #     pred = model.predict(arr)
-    #     return f"예측 가격 = {round(pred[0][0])} 만원"
-    #     #return render_template('predict.html', data=pred)
-
     @app.route('/predict', methods = ['POST'])
     def predict():
-        X_test = [[90, 2002, 6]]
-        y_pred = model.predict(X_test)
-        return f"예측 가격 = {round(y_pred[0][0])} 만원"
+        data1 = request.form['a']
+        data2 = request.form['b']
+        data3 = request.form['c']
+        arr = np.array([[data1, data2, data3]])
+        pred = model.predict(arr)
+        return f"예측 가격 = {round(pred[0][0])} 만원"
+        #return render_template('predict.html', data=pred)
+
+    # @app.route('/predict', methods = ['POST'])
+    # def predict():
+    #     X_test = [[90, 2002, 6]]
+    #     y_pred = model.predict(X_test)
+    #     return f"예측 가격 = {round(y_pred[0][0])} 만원"
     
     return app
 

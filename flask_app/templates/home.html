@@ -13,9 +13,9 @@
     <h1> CanIBuyaHouse? </h1><br>
     
     <form method="POST", action="{{url_for('predict')}}">
-       <b> First value :  <input type="text", name='a', placeholder="enter 1"> <br><br>
-        Second value :  <input type="text", name='b', placeholder="enter 2"> <br><br>
-        Third value :  <input type="text", name='c', placeholder="enter 3"> <br><br><br></b>
+       <b> 전용면적(m^3) :  <input type="number", name='a', placeholder="ex) 80"> <br><br>
+        준공년도 :  <input type="number", name='b', placeholder="ex) 2010"> <br><br>
+        층수 :  <input type="number", name='c', placeholder="ex) 6"> <br><br><br></b>
         <input type="submit" , value='predict!' >
     </form>
     
