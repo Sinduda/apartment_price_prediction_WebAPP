@@ -23,13 +23,12 @@ def create_app():
         data3 = int(request.form['c'])
         X_test = [[data1, data2, data3]]
         y_pred = model.predict(X_test)
-        return render_template('predict.html', data=round(y_pred[0][0]))
+        
+        sundae_p = round((round(y_pred[0][0])*10000) / 6000)
+        coffee_p = round((round(y_pred[0][0])*10000) / 3000)
+        hamb_p = round((round(y_pred[0][0])*10000) / 3000)
 
-    # @app.route('/predict', methods = ['POST'])
-    # def predict():
-    #     X_test = [[90, 2002, 6]]
-    #     y_pred = model.predict(X_test)
-    #     return f"예측 가격 = {round(y_pred[0][0])} 만원"
+        return render_template('predict.html', data=round(y_pred[0][0]), sundae=sundae_p, coffee=coffee_p, hamb=hamb_p)
     
     return app
 
