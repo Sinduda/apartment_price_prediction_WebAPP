@@ -28,7 +28,7 @@ def create_app():
         coffee_p = round((round(y_pred[0][0])*10000) / 3000)
         hamb_p = round((round(y_pred[0][0])*10000) / 5900)
 
-        return render_template('predict.html', data=round(y_pred[0][0]), sundae=sundae_p, coffee=coffee_p, hamb=hamb_p, square=data1, old=data2,floor=data3)
+        return render_template('predict.html', data=round(y_pred[0][0]), sundae=sundae_p, coffee=coffee_p, hamb=hamb_p, square=int(request.form['a']), old=int(request.form['b']),floor=data3)
     
     return app
 
