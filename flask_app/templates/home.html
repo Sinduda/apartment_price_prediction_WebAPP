@@ -35,12 +35,12 @@
 
     <center>
 
-    <h3> 내가 서울에서 아파트를 살 수 있을까..? </h3><br>
+    <br><br><h3> 내가 서울에서 아파트를 살 수 있을까..? </h3><br>
     
     <form method="POST", action="{{url_for('predict')}}">
-       <b> 평수 :  <input type="text", name='a', placeholder="ex) 30 "> <br><br>
-        연식 :  <input type="text", name='b', placeholder="ex) 20"> <br><br>
-        층수 :  <input type="text", name='c', placeholder="ex) 5"> <br><br><br></b>
+       <b> 평수 :  <input type="text" required name='a', placeholder="ex) 30 "> <br><br>
+        연식 :  <input type="text" required name='b', placeholder="ex) 20"> <br><br>
+        층수 :  <input type="text" required name='c', placeholder="ex) 5"> <br><br><br></b>
         <input type="submit" , value='얼마일까?' >
     </form>
     
