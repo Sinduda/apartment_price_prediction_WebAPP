@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CanIBuyaHouse?</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>자가를 꿈꾸다</title>
 </head>
-<body bgcolor=#d4a3ae>
+<body bgcolor=#FFEBCD>
 
     <center>
 
-    <h1> Can I Buy a House? </h1><br>
+    <h1> 서울 자가를 꿈꾸다 </h1><br>
     
     <form method="POST", action="{{url_for('predict')}}">
-       <b> 평수 (전용면적) :  <input type="text", name='a', placeholder="ex) 80"> <br><br>
-        완공년도 :  <input type="text", name='b', placeholder="ex) 2010"> <br><br>
-        층수 :  <input type="text", name='c', placeholder="ex) 6"> <br><br><br></b>
-        <input type="submit" , value='predict!' >
+       <b> 평수 :  <input type="text", name='a', placeholder="원하는 평수를 숫자만 입력하세요. ex) 30 "> <br><br>
+        완공년도 :  <input type="text", name='b', placeholder="언제 지어진 아파트면 좋겠나요? 완공년도를 입력하세요. ex) 2010"> <br><br>
+        층수 :  <input type="text", name='c', placeholder="원하는 층수를 숫자만 입력하세요. ex) 6"> <br><br><br></b>
+        <input type="submit" , value='내가 원하는 집은 얼마?' >
     </form>
     
     </center>
