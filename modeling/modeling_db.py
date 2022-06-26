@@ -6,7 +6,7 @@ pymysql.install_as_MySQLdb() # reference - http://i5on9i.blogspot.com/2020/05/no
 from sqlalchemy import create_engine
 
 # MySQL의 데이터를 데이터프레임으로 가져오기
-engine = create_engine('mysql://root:4889@localhost/project3_db')
+engine = create_engine('mysql://root:0000@localhost/project3_db')
 conn = engine.connect()
 
 df = pd.read_sql_table('mydata', conn)

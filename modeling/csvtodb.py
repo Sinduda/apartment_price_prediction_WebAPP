@@ -4,7 +4,7 @@ import pymysql
 df = pd.read_csv('data.csv', encoding = 'utf-8')
 
 # db 연결
-conn = pymysql.connect(host='localhost', port=3306, user='root', password='4889', db='project3_db', charset='utf8')
+conn = pymysql.connect(host='localhost', port=3306, user='root', password='0000', db='project3_db', charset='utf8')
 cur = conn.cursor()
 
 # 테이블 생성
