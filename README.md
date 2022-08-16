@@ -3,7 +3,7 @@
 - 진행 기간: 6월 22일 ~ 6월 26일
 - 사용 언어: `Python`,`MySQL`
 - **프로젝트 발표 영상**은 [여기](https://youtu.be/eXWBu-wuSBw)에서 보실 수 있습니다.
-- 아래 내용은 [노션 페이지](https://inhwan-hwang.notion.site/Transformer-c9f48d8ca85c401d8324fa872fae7938)에서 좀 더 편하게 읽으실 수도 있습니다.
+- 아래 내용은 [노션 페이지](https://inhwan-hwang.notion.site/2325f6d39b2f468da7cb30dbcc87c571)에서 좀 더 편하게 읽으실 수도 있습니다.
 
 ---
 
